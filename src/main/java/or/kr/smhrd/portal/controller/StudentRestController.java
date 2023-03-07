@@ -137,7 +137,7 @@ public class StudentRestController {
     }
 
     // 삭제
-    @PostMapping("portfolio/delete")
+    @PostMapping("/portfolio/delete")
     public void deletePortfolio(@RequestBody Map<String, String> data){
         studentService.deletePortfolio(data);
     }

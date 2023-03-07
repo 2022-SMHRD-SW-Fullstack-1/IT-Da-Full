@@ -5,6 +5,7 @@ import java.io.InputStream;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.FilenameUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,8 +28,11 @@ public class FileRestContoller {
         @RequestParam("file") MultipartFile file,
         @RequestParam("id") String id
     ){
-        String path = "src/main/resources/file/"+id+"/resume/photo";
-        File targetFile = new File(path);
+        String ext = FilenameUtils.getExtension(file.getOriginalFilename()).toLowerCase();
+        // String path = "src/main/resources/file/"+id+"/resume/photo."+ext;
+        String path = "/file/"+id+"/resume/photo."+ext;
+        String pre ="src/main/frontend/public";
+        File targetFile = new File(pre+path);
         try {
             InputStream fileStream = file.getInputStream();
             FileUtils.copyInputStreamToFile(fileStream, targetFile);
@@ -42,10 +46,12 @@ public class FileRestContoller {
     /**이력서 사진 삭제 */
     @PostMapping("/delete")
     public void deleteResume(
-        @RequestParam("id") String id
+        @RequestParam("id") String id,
+        @RequestParam("path") String path
     ){
-        String path = "src/main/resources/file/resume/"+id+"/photo";
-        File targetFile = new File(path);
+        String pre ="src/main/frontend/public";
+        File targetFile = new File(pre+path);
+        System.out.println("삭제!!"+pre+path);
         if(targetFile.exists()){
         targetFile.delete();
         fileService.deleteResume(id, path);
@@ -58,14 +64,16 @@ public class FileRestContoller {
         @RequestParam("file") MultipartFile file,
         @RequestParam("id") String id,
         @RequestParam("num") String num,
-        @RequestParam("idx") String idx
+        @RequestParam("idx") int idx
     ){
-        String path = "src/main/resources/file/portfolio/"+id+"/"+num+"/"+idx;
-        File targetFile = new File(path);
+        String ext = FilenameUtils.getExtension(file.getOriginalFilename()).toLowerCase();
+        String path = "/"+num+"/"+idx+"."+ext;
+        String pre = "src/main/frontend/public/file/portfolio/"+id;
+        File targetFile = new File(pre+path);
         try {
             InputStream fileStream = file.getInputStream();
             FileUtils.copyInputStreamToFile(fileStream, targetFile);
-            fileService.uploadPortfolio(id, path, idx);
+            fileService.uploadPortfolio(id, path, idx, num);
         } catch (IOException e) {
             FileUtils.deleteQuietly(targetFile);
             e.printStackTrace();
@@ -75,15 +83,17 @@ public class FileRestContoller {
     @PostMapping("/delete/portfolio")
     public void deletePortfolio(
         @RequestParam("id") String id,
-        @RequestParam("num") String num,
-        @RequestParam("idx") String idx
+        @RequestParam("path") String path
     ){
-        String path = "src/main/resources/file/portfolio/"+id+"/"+num+"/"+idx;
-        File targetFile = new File(path);
-        if(targetFile.exists()){
+        System.out.println("파일 삭제");
+        System.out.println(id);
+        System.out.println(path);
+        String pre = "src/main/frontend/public/file/portfolio/"+id;
+        File targetFile = new File(pre+path);
+        // if(targetFile.exists()){
             targetFile.delete();
-            fileService.deletePortfolio(id, path);
-        }
+            // fileService.deletePortfolio(id, path);
+        // }
     }
 
     /**게시판 파일 업로드 */
@@ -93,8 +103,9 @@ public class FileRestContoller {
         @RequestParam("id") String id,
         @RequestParam("num") String num
     ){
-        String path = "src/main/resources/file/board/"+id+"/"+num;
-        File targetFile = new File(path);
+        String path = "/"+num+"/"+file.getOriginalFilename();
+        String pre = "src/main/frontend/public/file/board";
+        File targetFile = new File(pre+path);
         try {
             InputStream fileStream = file.getInputStream();
             FileUtils.copyInputStreamToFile(fileStream, targetFile);
@@ -108,14 +119,13 @@ public class FileRestContoller {
     @PostMapping("/delete/board")
     public void deleteBoard(
         @RequestParam("id") String id,
-        @RequestParam("num") String num,
-        @RequestParam("idx") String idx
+        @RequestParam("path") String path
     ){
-        String path = "src/main/resources/file/board/"+id+"/"+num+"/"+idx;
-        File targetFile = new File(path);
+        String pre = "src/main/frontend/public/file/board/"+id;
+        File targetFile = new File(pre+path);
         if(targetFile.exists()){
             targetFile.delete();
-            fileService.deleteBoard(id, path);
+            // fileService.deleteBoard(id, path);
         }
     }
 }

@@ -1,0 +1,50 @@
+[
+   {
+      "title": "나의 강의실",
+      "subtitle": [
+         {
+            "title": "공지사항",
+            "url": "/announcement"
+         },
+         {
+            "title": "강의 일정",
+            "url": "/schedule"
+         },
+         {
+            "title": "공유 자료실",
+            "url": "/archive"
+         }
+      ]
+   },
+   {
+      "title": "나의 정보",
+      "subtitle": [
+         {
+            "title": "이력서",
+            "url": "/resume"
+         },
+         {
+            "title": "자기소개서",
+            "url": "/cover_letter"
+         },
+         {
+            "title": "포트폴리오",
+            "url": "/portfolio"
+         }
+      ]
+   }
+   ,
+   {
+      "title": "취업 지원",
+      "subtitle": [
+         {
+            "title": "채용 공고",
+            "url": "/company/search"
+         },
+         {
+            "title": "관심 기업",
+            "url": "/company/bookmark"
+         }
+      ]
+   }
+]

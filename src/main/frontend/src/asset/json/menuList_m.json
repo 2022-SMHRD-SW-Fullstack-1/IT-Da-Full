@@ -1,0 +1,38 @@
+[
+   {
+      "title": "전체 공지",
+      "subtitle": [
+         {
+            "title": "공지사항",
+            "url": "/manager_announcement"
+         }
+      ]
+   },
+   {
+      "title": "과정 관리",
+      "subtitle": [
+         {
+            "title": "과정 생성",
+            "url": "/make_course"
+         },
+         {
+            "title": "전체 과정",
+            "url": "/edit_course"
+         }
+      ]
+   },
+   {
+      "title": "기업 관리",
+      "subtitle": [
+         {
+            "title": "기업 관리",
+            "url": "/select_enterprise"
+         },
+         {
+            "title": "기업 공고 관리",
+            "url": "/select_company"
+         }
+         
+      ]
+   }
+]

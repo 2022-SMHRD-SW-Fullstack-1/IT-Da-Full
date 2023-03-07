@@ -19,7 +19,7 @@ import or.kr.smhrd.portal.service.EnterpriseService;
 import or.kr.smhrd.portal.service.MemberService;
 
 @RequiredArgsConstructor
-@RequestMapping("member")
+@RequestMapping("/member")
 @RestController
 public class MemberRestController {
 

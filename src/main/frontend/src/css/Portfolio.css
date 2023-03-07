@@ -1,0 +1,87 @@
+.portfolioDiv{
+    background-color: white;
+    /* border: solid 1px rgb(150, 150, 150); */
+    border-radius: 10px;
+    margin: 2rem;
+    padding: 1rem;
+    box-shadow : 2px 2px 3px 2.5px rgb(220, 220, 220);
+}
+.portfolioDiv>p{
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid rgb(150, 150, 150);
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.portfolioDiv>div>div:first-child{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.portfolioDiv>div>div>p{
+    color: rgb(109, 109, 109)
+}
+.portfolioDiv>div>div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+}
+.portfolioDiv>div>div>div:first-child{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.portfolioDiv>div>div>div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+.portfolioDiv>div>div>table{
+    table-layout:fixed;
+    min-width: 23rem
+}
+.portfolioDiv>div>div>table>tbody>tr:first-child{
+    border-top: 3px solid rgb(150, 150, 150);
+    height: 1rem;
+}
+.portfolioDiv>div>div>table>tbody>tr>th{
+    width: 5rem;
+    vertical-align: baseline;
+}
+.portfolioDiv>div>div>table>tbody>tr>td{
+    vertical-align: baseline;
+}
+.portfolioDiv .row{
+    width:fit-content
+}
+.portfolioDiv .row>div{
+    width:fit-content
+}
+.left>img:first-child{
+    width: 36rem;
+    height: auto;
+
+}
+.portfolioDiv .row>div:nth-child(2){
+    max-width: 36rem;
+    min-width: 28rem;
+}
+.left>ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height: auto;
+    padding-right: 2rem;
+}
+.left>ul>li{
+    display: flex;
+    margin: 1rem;
+}
+.left>ul>li>img{
+    width:64px;
+    height: 56px;
+}

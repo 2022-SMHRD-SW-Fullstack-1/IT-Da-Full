@@ -1,0 +1,401 @@
+.topDiv_resumePage{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+
+}
+
+
+.topDiv_resume {
+   min-width: 60rem;
+   max-width: 80rem;
+   margin: 2rem;
+   padding: 1.5rem 0.7rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: white;
+   border-radius: 10px;
+}
+
+.topDiv_resume>div {
+   width: 56rem;
+   margin-bottom: 5rem;
+ 
+}
+.topDiv_resume>div:first-child>p:first-child {
+   margin-bottom: 1rem;
+   
+}
+.topDiv_resume>div>table {
+   margin-bottom: 1rem;
+   width: 100%;
+   text-align: center;
+   
+}
+.topDiv_resume>div td {
+   padding-top: 0.5rem;
+ 
+   
+}
+.r_basic {
+   display: flex;
+   margin-bottom: 3rem;
+   
+}
+/*증명사진 div*/
+.r_basic>div:first-child {
+   width: 10rem;;
+}
+.r_basic>div:last-child {
+   width: 45rem;
+}
+.sRPhotoDiv{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.sRPhotoDiv>div{
+   padding: .5rem;
+   
+}
+.r_basic>div>div>div>button{
+   margin: 0.2rem;
+}
+
+.resumeTable>thead>tr>th>div, .resumeTable>tbody>tr>td>div{
+   width: 2rem;
+   margin-bottom: 1.5rem;
+}
+
+.resumeTable>tbody>tr:hover{
+   background-color: rgb(238, 238, 238);
+}
+.resumeTable>p{
+   margin-bottom: 0;
+}
+
+
+#resumeSubTitle{
+   margin: 10rem 10rem 10rem 10rem !important;
+}
+
+
+/*이름 성별 태어난연도 div, 각 div 제목 p 태그*/
+.r_basic>div:last-child>div:first-child, .topDiv_resume>div>p, .r_basic>div:last-child>div:last-child>p:first-child,.topDiv_resume>div>span {
+   display: flex;
+   align-items: center;
+   border-bottom: 2px solid rgb(209, 209, 209);
+   margin-bottom: 0rem;
+   width: 100%;
+   
+}
+.r_basic>div:last-child>div:first-child>p {
+   margin: 0;
+}
+/*이름 p태그, 각 div 제목 p 태그*/
+.r_basic>div:last-child>div:first-child>p:first-child, .topDiv_resume>div>p, .r_basic>div:last-child>div:last-child>p:first-child{
+   font-size: 1.7rem;
+   font-weight: bold;
+   margin-right: 1rem;
+   
+}
+
+/*기술스택*/
+.r_basic>div:last-child>div:last-child>p>input{
+   width: 40rem;
+   height: 10rem;
+ 
+}
+
+/*연락처 이메일 주소 희망지역 div들*/
+.r_basic>div:last-child>div>div {
+   display: flex;
+}
+.r_basic>div:last-child>div>div>p:first-child {
+   min-width: 5rem;
+   text-align: center;
+}
+.blueBtn{
+   border: none;
+   border-radius: 5px;
+   padding: 0.4rem 0.6rem;
+   margin: 0 0.5rem;
+   background-color: rgb(0, 138, 204);
+   font-weight: bold;
+   color: white;
+}
+
+#sRBtnDiv{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+#sRBtnDiv:hover{
+   cursor: pointer;
+}
+
+.sRAddBtn{
+   width: 1.7rem;
+   height: 1.7rem;
+}
+.sRDeleteBtn{
+   width: 1.7rem;
+   height: 1.7rem;
+}
+
+.rDt>input{
+   width: 6rem;
+}
+/* 저장하기 버튼 */
+.saveDiv{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin-top: 0.5rem;
+}
+
+.rOrg>input{
+   width: 10rem;
+}
+.dateInput{
+   width: 7rem;
+}
+
+/*자소서*/
+.cLInput{
+   width: 98.25%;
+   height: 10rem;
+
+}
+
+/*input 크기*/
+.gradScore{
+   width: 3rem;
+}
+.miliArmy{
+   width: 5rem;
+}
+.crPosition{
+   width:5rem;
+}
+.big_input_text{
+   width: 20rem;
+   height: 5rem;
+}
+
+.sRBtnSaveDiv{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.photoDiv{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.photoDiv>div{
+   margin-top: 0.5rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+}
+.photoDiv>div:last-child{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 0.5rem;
+   width: 3cm;
+}
+.photoDiv>div:last-child>button{
+   width: 46.5%;
+}
+.photoDiv>div>button{
+   border: none;
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+   border-radius: 5px;
+   height: 2.2rem;
+   background-color: rgb(75, 75, 75);
+   color: white;
+}
+
+.photoDiv>img{
+   width: 3cm;
+   height: 4cm;
+}
+
+.photoDiv>div>input{
+   width: 50%;
+}
+
+.textBtn{
+   border-style:solid;
+   border-radius: 5px;
+   margin: 0.5rem;
+   padding: 0.3em 0.3rem 0.3rem 1rem;
+   background-color: white;
+   color: black;
+   border: 1px solid;
+}
+.textBtn>span:last-child{
+   color: white;
+}
+.textBtn>span:first-child{
+   color: black;
+}
+.textBtn:hover {
+   background-color: rgb(233, 233, 233);
+   color: rgb(220,77,67);
+}
+.textBtn:hover>span:last-child{
+   color: rgb(220,77,67);
+}
+.imgSelBtn>button{
+   width: 3cm;
+}
+.resumeBtn{
+   border: none;
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+   height: 2rem;
+   margin-left: 0.2rem;
+   margin-right: 0.2rem;
+   border-radius: 5px;
+   background-color: rgb(113, 113, 113);
+   color: white;
+}
+.resumeBtn:hover{
+   background-color: rgb(75, 75, 75);
+}
+
+.resumeDiv>div:last-child{
+   display: flex;
+   flex-direction: column;
+ 
+}
+.r_basic>div:last-child>div:first-child {
+   border-collapse: separate;
+}
+
+
+.resume_name{
+   font-size: 1.4rem;
+   font-weight: bold;
+   margin-right: 1rem;
+   border: none;
+}
+.resume_gender{
+   margin-left: 4.4rem;
+
+}
+.resume_email{
+   margin-left: 3rem;
+
+}
+.resume_phone{
+   margin-left: 3rem;
+
+}
+#resume_major{
+   margin-left: 4.4rem;
+   
+}
+
+.resume_birth{
+   margin-left: 4.4rem;
+}
+.wish_salary{
+   margin-left: 2.5rem;
+}
+
+
+
+
+.r_basic>div:nth-child(2)>div>div:nth-child(7)>p>span>span:nth-child(2) {
+   margin-left: 2.5rem;
+}
+.r_basic>div:nth-child(2)>div>div:nth-child(7)>p>span>span:nth-child(3) {
+   margin-left: 2.5rem;
+   margin-right: 2.5rem;
+}
+
+.resumeTable>tbody>tr>td:last-child{
+   width: 5rem;
+}
+.resumeTable>tbody>tr>td:last-child>div>button:hover{
+   background-color: rgb(220,77,67);
+}
+.resumeTable>tbody:last-child>tr>td:last-child>div>button:hover{
+   background-color: rgb(75, 75, 75);
+}
+
+.resumeTable>tbody>tr>td:last-child>div{
+   width: 100%;
+   height: 100%;
+   margin: 0;
+}
+
+.resumeTable>thead>tr>th{
+   background-color:aliceblue;
+   height: 3rem;
+}
+
+.resumeTable>tbody>tr>td>p{
+   margin: 0.5rem;
+}
+#smallTable{
+   margin-bottom: 3rem;
+}
+.r_basic>div:nth-child(2)>div:nth-child(3)>div>p{
+   text-align: left;
+   margin-right: 2rem;
+}
+.resume_Difault_Btn{
+   border: 1px solid #bdbdbd;
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+   height: 2rem;
+   background-color: #ffffff;
+   border-radius: 5px;
+   color: rgb(0, 0, 0);
+   font-size: 1rem;
+   margin-left: 44.9rem;
+}
+.resume_Difault_Btn2{
+   border: 1px solid #bdbdbd;
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+   height: 2rem;
+   background-color: rgb(113, 113, 113);
+   border-radius: 5px;
+   color: white;
+   font-size: 1rem;
+   margin-left: 44.9rem;
+}
+.resume_Difault_Btn3{
+   border: 1px solid #bdbdbd;
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+   height: 2rem;
+   background-color: #ffffff;
+   border-radius: 5px;
+   color: rgb(0, 0, 0);
+   font-size: 1rem;
+   margin-left: 0.2rem;
+}
+#resume_school{
+   border-bottom: 1px solid;
+}
+.wish_field_name{
+   height: 1.9rem;
+   width: 15rem;
+   margin-left: 29.7rem;
+   font-size: 1rem;
+}

@@ -1,0 +1,47 @@
+.resume {
+   display: flex;
+}
+.resume1>div {
+   display: flex;
+   flex-direction:raw;
+}
+.sRPhotoDiv {
+   margin-right: 4rem;
+}
+.resume_b {
+   display: flex;
+   flex-direction: column;
+   min-width: 6rem;
+}
+.resume_ngb{
+   display: flex;
+   flex-direction: row;
+}
+.sRTitleDiv2>div, .sRTitleDiv>div{
+   min-width: 5rem;
+}
+.sRTitleDiv2, .sRTitleDiv{
+   display: flex;
+}
+.resumeInput {
+   display: inline-flex;
+}
+.sRTitleDiv{
+   justify-content: space-between;
+}
+.resumeText {
+   display: inline;
+}
+
+.sRTitle{
+   border-bottom: 3px solid rgb(209, 209, 209);
+   margin-bottom: 2.5rem;
+   font-size: 1.4rem;
+   font-weight: bold;
+   /* margin-right: 1rem; */
+}
+.sRContentDiv{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 10rem;
+}

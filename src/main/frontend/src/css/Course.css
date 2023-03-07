@@ -1,0 +1,109 @@
+.container {
+   padding: 1rem;
+   width: 100%;
+}
+.container>p {
+   font-weight: bold;
+   font-size: larger;
+   margin-left: 2rem;
+}
+.content {
+   width: 100%;
+   max-width: 50rem;
+}
+.content>table {
+   width: 100%;
+   text-align: center;
+}
+.content>table>thead {
+   font-weight: bold;
+}
+.content>table td {
+   padding: 0.5rem 0;
+  
+}
+.content>table>tbody>tr {
+   border-top: 1px solid rgb(214, 214, 214);
+   
+}
+
+
+
+/*announcement write*/
+.annContent>input {
+   border: 1px solid #ccc;
+   width: 100%;
+}
+.annContent>p {
+   margin: 0.5rem 0;
+}
+.annContent>p:first-child, .content>table {
+   border-top: 1px solid;
+   padding-top: 1rem;
+}
+
+/*저장하기 버튼 CSS*/
+.annWriteButton, .annViewButton {
+   display: flex;
+   justify-content: flex-end;
+   padding: 1rem 0;
+}
+.annWriteButton>button, .annViewButton>button {
+   border: none;
+   padding: 0.4rem 1rem;
+   margin-left: 1rem;
+   border-radius: 5px;
+   background-color: rgb(75, 75, 75);;
+   color: white;
+}
+
+.quill {
+   height: 20rem;
+}
+.quill * {
+   max-height: 16rem;
+}
+
+
+/*announcement view*/
+.annViewTitle {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   padding: 1rem 0.5rem;
+   border-top: 1px solid black;
+   border-bottom: 1px solid rgb(209, 209, 209);
+}
+.annViewTitle>p {
+   margin: 0;
+   font-size: 0.95rem;
+   color: rgb(81, 81, 81);
+}
+.annViewTitle>p:first-child {
+   font-size: 1.5rem;
+   font-weight: 500;
+   color: black;
+}
+.annViewContent {
+   min-height: 20rem;
+   border-bottom: 1px solid rgb(209, 209, 209);
+}
+.annViewContent>p {
+   margin: 1rem 0;
+   line-height: 3rem;
+}
+
+.comapny_bookmark_th{
+   width: 2rem;
+
+}
+
+.company_bookmark{
+   
+   text-align: right;
+   margin-bottom: 0.3rem
+}
+.fileColor{
+   color:blue
+}

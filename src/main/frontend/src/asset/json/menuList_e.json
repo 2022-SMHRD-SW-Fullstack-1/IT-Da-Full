@@ -1,0 +1,24 @@
+[
+  {
+    "title": "인재 정보",
+    "subtitle": [
+      {
+        "title": "인재 검색",
+        "url": "/"
+      },
+      {
+        "title": "스크랩 인재",
+        "url": "/detail_bookmark"
+      }
+    ]
+  },
+  {
+    "title": "채용 공고",
+    "subtitle": [
+      {
+        "title": "공고 관리",
+        "url": "/select_one_company"
+      }
+    ]
+  }
+]

@@ -17,8 +17,8 @@ public class FileService {
     public void deleteResume(String id, String path){
         fileMapper.deleteResume(id, path);
     }
-    public void uploadPortfolio(String id, String path, String idx){
-        fileMapper.uploadPortfolio(id, path, idx);
+    public void uploadPortfolio(String id, String path, int idx, String num){
+        fileMapper.uploadPortfolio(id, path, idx, num);
     }
     public void deletePortfolio(String id, String path){
         fileMapper.deletePortfolio(id, path);

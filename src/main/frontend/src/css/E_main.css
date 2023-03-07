@@ -1,0 +1,132 @@
+.E_main_page {
+  display: flex;
+  justify-content: center;
+}
+
+.big_div {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+}
+
+.in {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  padding: 3%;
+}
+.E_main_detail {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px;
+}
+#boot_header {
+  background-color: rgb(0, 138, 204);
+}
+.E_main_input_detail {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 1000px;
+}
+.detail_inner_info {
+  display: flex;
+}
+.E_main_input_detail_first_div {
+  text-align: center;
+}
+.E_main_input_detail_two_div {
+  text-align: center;
+  margin-left: 0.6rem;
+}
+.E_main_input_detail_three_div {
+  text-align: center;
+  padding-left: 10px;
+}
+.filter {
+  clear: both;
+  width: 1000px;
+}
+.test {
+  background-color: rgb(0, 138, 204);
+  border-radius: 5px;
+  color: white;
+  width: 5em;
+  height: 2.3em;
+  text-align: center;
+  float: right;
+  padding: 6px;
+}
+
+.first_div {
+  align-self: center;
+  width: 70em;
+  display: flex;
+  flex: content;
+  justify-content: space-between;
+
+  /* flex-direction: row; */
+}
+.first_div div {
+}
+.E_main_table {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.two_div:hover {
+  background-color: rgb(206, 248, 255);
+}
+.two_div {
+  align-self: center;
+  width: 70rem;
+  display: flex;
+  flex: content;
+  padding: 3px;
+  margin: 3px;
+  border-bottom: 2px solid;
+  border-color: #e3e3e3;
+  background-color: aqua;
+}
+.E_main_title {
+  text-align: center;
+  border-bottom: 1px solid #e3e3e3;
+  background-color: #e3e3e3;
+  height: 2rem;
+  width: 50rem;
+}
+
+/* .E_main_info:hover {
+  background-color: #e3e3e3;
+} */
+
+.E_main_info:hover {
+  background-color: #e3e3e3;
+}
+
+.E_main_info {
+  text-align: center;
+  border-bottom: 1px solid rgb(232, 232, 232);
+  height: 2rem;
+}
+
+/*공고 관리의 공고 생성 버튼*/
+.recruitBtn {
+  margin-left: 64rem;
+  border: none;
+  border-radius: 5px;
+  padding: 0.4rem 0.6rem;
+  background-color: rgb(0, 138, 204);
+  font-size: medium;
+  color: white;
+}
+.filterBtn{
+  margin :0.5rem;
+  margin-right: 4.3rem;
+}

@@ -1,0 +1,170 @@
+@page {
+  margin-left: 15mm;
+  margin-right: 15mm;
+  margin-top: 25mm;
+}
+@media print {
+  .print>p {
+    margin: 0;
+  }
+}
+@media print {
+  #coverLetter p{
+    margin: 0;
+  }
+}
+
+.resumePrintTopDiv{
+  margin: 20mm;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.resumePrintTopDiv>button{
+  margin-top: 5mm;
+}
+.resumePrintDiv{
+
+    display: flex;
+    flex-direction: column;
+    width: 18cm;
+    height: 25cm;
+    font-size: 11pt;
+    text-align: center;
+  }
+
+  .resumePrintDiv + .resumePrintDiv {
+    margin-top: 40px;
+  }
+
+  /*이력서 타이틀*/
+  .resumePrintDiv>div:first-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 1mm;
+    border-color: rgb(71,176,187);
+    letter-spacing: 5mm;
+  }
+  .resumePrintDiv>div>span{
+    font-weight: bolder;
+    font-size: 22pt;
+    border-bottom: 1mm;
+  }
+  .resumePrintDiv>div>span:first-child{
+    width: 2.7cm;
+  }
+  .resumePrintDiv>div>span:last-child{
+    width: 6.4cm;
+  }
+  .resumePrintDiv>div:nth-child(2){
+    padding: 2mm;
+    font-weight: bold;
+    text-align: right;
+  }
+  /*이력서 테이블*/
+  .resumePrintDiv>table{
+    margin-bottom: 4mm;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid;
+  }
+  /*테이블 전체 검은 테두리*/
+  .resumePrintDiv>table>tbody>tr>th, .resumePrintDiv>table>tbody>tr>td, .resumePrintDiv>table>thead>tr>th{
+    border-collapse: collapse;
+    border: 1px solid;
+  }
+  /*사진 크기*/
+  #resumePrintPhoto{
+    width: 3cm;
+    height: 4cm
+  }
+
+  .resumePrintTitle1{
+    width: 27mm;
+  }
+
+  /*이력서 세부 항목 제목 칸(학력~전산관련)*/
+  .resumePrintDiv>table>tbody>tr:first-child>th:first-child{
+    width: 5%;
+  }
+  .resumePrintDt1{
+    width: 25%;
+  }
+  .resumePrintDt2{
+    width:30%
+  }
+  .resumePrintName{
+    width: 25%;
+  }
+
+
+  /*이력서 세부 항목 내용 칸 전체*/
+  .resumePrintDiv>table>tbody>tr>th, .resumePrintDiv>table>tbody>tr>td {
+    height: 7.5mm;
+  }
+  /*상기 내용은...*/
+  .resumePrintDiv>div>div:first-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .resumePrintDiv>div>div:first-child>p{
+    text-align: center;
+    line-height: 100%;
+  }
+  /*날짜,작성자*/
+  .resumePrintDiv>div>div:last-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+  }
+  .resumePrintDiv>div>div>span{
+    margin-left: 1.5cm;
+  }
+  /*이력서 세부 항목 제목 색*/
+  .resumePrintTitle{
+    background-color: rgb(223, 234, 245);
+    font-weight: bolder;
+  }
+
+  .printCareer{
+    line-height: 4mm;
+  }
+
+  /*출력하기 버튼*/
+  .printBtn{
+    border: none;
+    width: 5rem;
+    border-radius: 5px;
+    padding: 0.4rem 0.6rem;
+    margin: 0 0.5rem;
+    background-color: rgb(0, 138, 204);
+    font-weight: bold;
+    color: white;
+  }
+
+
+/*자소서 세부 항목 제목 칸(성장과정...)*/
+.resumePrintDiv>table>thead>tr>th:first-child{
+  width: 15mm;
+  height: 50mm;
+}
+
+#coverLetterTitle{
+  justify-content: center;
+}
+
+.resumePrintDiv>table>thead>tr>td{
+  padding: 1mm;
+  text-align: left;
+  vertical-align: baseline;
+}
+
+#coverLetter{
+  height: auto;
+}
+
+.resumePrintTopDiv p {
+  margin: 0;
+}

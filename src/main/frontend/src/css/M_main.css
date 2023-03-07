@@ -1,0 +1,308 @@
+.basic_container {
+    padding: 1rem;
+    width: 100%;
+}
+
+.basic_container>p {
+    font-weight: bold;
+    font-size: larger;
+    margin-left: 2rem;
+}
+
+.course_make_container_inner {
+    width: 100%;
+    max-width: 33rem;
+    display: flex;
+    border: solid 0.1rem rgb(211, 211, 211)
+}
+
+.container_inner_left {
+    width: 10rem;
+}
+
+.container_inner_left>p {
+    width: 10rem;
+    height: 4rem;
+    font-weight: bold;
+    padding: 1rem;
+    padding-left: 1.5rem;
+    margin: 0;
+}
+
+.container_inner_right {
+    display: flex;
+    flex-direction: column;
+}
+
+.container_inner_right>input {
+    width: 20rem;
+    height: 2rem;
+    border: 0.1rem solid rgb(211, 211, 211);
+    padding-left: 0.5rem;
+    flex-direction: row;
+    margin: 1rem
+}
+
+.make_course_button {
+    display: flex;
+    justify-self: center;
+}
+
+/* list css */
+.course_edit_container_inner {
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.edit_course_table {
+    padding-bottom: 5px;
+    justify-content: center;
+}
+
+.edit_course_edit_title {
+    font-size: 18px;
+    margin: 20px;
+}
+
+.edit_course_edit_title>th {
+    padding-bottom: 10px;
+}
+
+.edit_course_edit_content {
+    font-weight: 100;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/*  */
+/*  */
+
+
+.content>table {
+    margin-right: 0.5rem;
+}
+
+.course_subject {
+    width: 21rem;
+    margin-right: 0.5rem;
+
+}
+
+.course_name {
+    width: 23rem;
+    margin-right: 0.5rem;
+
+}
+
+.course_campus {
+    width: 6rem;
+    margin-right: 0.5rem;
+
+}
+
+.course_period {
+    width: 12rem;
+    margin-right: 0.5rem;
+
+}
+
+.course_period_edit {
+    width: 8rem;
+    margin-right: 0.5rem;
+}
+
+.course_teacher {
+    width: 4rem;
+    margin-right: 0.5rem;
+
+}
+
+.course_limit {
+    width: 4rem;
+    margin-right: 0.5rem;
+}
+
+.course_key {
+    width: 6rem;
+}
+
+.course_button {
+    width: 7rem;
+}
+
+
+
+.course_subject>input {
+    width: 95%;
+}
+
+.course_name>input {
+    width: 95%;
+}
+
+.course_campus>input {
+    width: 95%;
+}
+
+.course_period_edit>input {
+    width: 50%;
+}
+
+.course_teacher>input {
+    width: 95%;
+}
+
+.course_limit>input {
+    width: 95%;
+}
+
+.e_name {
+    width: 10rem
+}
+
+.e_name>input {
+    width: 95%
+}
+
+.annViewButton>button {
+    margin: 0.1rem
+}
+
+.manager_button {
+    padding: 1rem;
+    padding-left: 12rem;
+}
+
+.manager_button>button {
+    border: none;
+    padding: 0.4rem 1rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    background-color: rgb(75, 75, 75);
+    color: white;
+}
+
+/* 회사 수정 */
+
+.company_register {
+    width: 5.5rem;
+}
+
+.company_register>input {
+    width: 95%;
+}
+
+.company_name {
+    width: 9.5rem
+}
+
+.company_namer>input {
+    width: 95%;
+}
+
+.company_deadline {
+    width: 5.5rem
+}
+
+.company_deadline>input {
+    width: 95%;
+}
+
+.td_in_tr {
+    display: flex;
+}
+
+.td_in_tr>div:first-child {
+    width: 5rem;
+    font-weight: bold;
+}
+
+.company_outer {
+    width: 37rem;
+}
+
+.company_outer>div {
+    display: flex;
+    text-align: left;
+    border-bottom: 1px solid lightgray;
+    margin: 0.1rem 0.5rem;
+}
+.company_outer>div:last-child {
+    border-bottom: none;
+}
+
+.company_outer>div>div:first-child {
+    width: 6rem;
+    font-weight: bold;
+    padding: 0.2rem;
+    text-align: center;
+}
+.company_outer>div>div:nth-child(2) {
+    padding: 0.2rem;
+}
+
+.company_outer>div>div>input {
+    width: 27.5rem;
+}
+
+
+/* 위젯 */
+
+.attTable_manager {
+    width: 100%;
+    text-align: left;
+}
+
+.attTable_manager thead {
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-size: large;
+}
+
+.attTable_manager td {
+    text-align: center;
+ }
+
+ .annItem_manager {
+    border-top: 1px solid rgb(231, 231, 231);
+    margin: 0.5rem 0.6rem;
+    padding: 0.4rem 0;
+    /*텍스트 줄바꿈 없애고 overflow되면 ...표시로 바꿔줌*/
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+ }
+
+ .attTable_manager .attNum_manager{
+    font-size: 2rem;
+ }
+
+ .annBody_manager {
+    width: 100%;
+    padding: 0 0.2rem;
+    height: inherit;
+ }
+
+ .extend_register > input{
+    margin-top : 1rem;
+    margin-right: 3rem;
+ }
+
+ .extend_register > button {
+    border-radius: 10%;
+    background-color: aqua;
+ }
+
+ .btbtbtbt {
+    border: none;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 5px;
+    height: 2.2rem;
+    background-color: rgb(75, 75, 75);
+    color: white;
+ }

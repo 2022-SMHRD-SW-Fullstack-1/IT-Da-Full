@@ -1,0 +1,52 @@
+.stdInfoContainer>h1 {
+   font-size: 1.8rem;
+   font-weight: bold;
+   text-align: center;
+   margin: 1rem;
+}
+
+.stdInfoContainer>div:nth-child(2) {
+   display: flex;
+   justify-content: space-around;
+   margin: 2rem 0;
+}
+
+.stdInfoContainer>div:nth-child(2) th,
+.stdInfoContainer>div:nth-child(2) td {
+   border: 1px solid black;
+}
+
+.stdInfoContainer>div:nth-child(2) th {
+   padding: 0.2rem 0.5rem;
+   background-color: rgb(235, 235, 235);
+}
+
+.stdInfoContainer>div:nth-child(2) table td:first-child,
+.stdInfoContainer>div:nth-child(2) th {
+   text-align: center;
+}
+
+.stdInfoContainer>div:nth-child(2) table td:nth-child(2) {
+   padding-left: 0.5rem;
+}
+
+.stdInfoContainer>div:nth-child(3) {
+   max-width: none;
+}
+
+.stdInfoContainer>div:nth-child(3)>p:first-child {
+   font-weight: bold;
+   font-size: 1.4rem;
+   width: 100%;
+   margin-top: 1.5rem;
+}
+
+#modifyBtn {
+   margin-left: 4rem;
+   border: none;
+   padding: 0.4rem 1rem;
+   border-radius: 5px;
+   background-color: rgb(75, 75, 75);
+   color: white;
+   font-size: medium;
+}

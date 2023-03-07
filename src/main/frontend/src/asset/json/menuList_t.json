@@ -1,0 +1,32 @@
+[
+   {
+      "title": "수업 관리",
+      "subtitle": [
+         {
+            "title": "공지사항",
+            "url": "/announcement"
+         },
+         {
+            "title": "강의 일정",
+            "url": "/schedule"
+         },
+         {
+            "title": "공유 자료실",
+            "url": "/archive"
+         }
+      ]
+   },
+   {
+      "title": "학생 관리",
+      "subtitle": [
+         {
+            "title": "학생 정보",
+            "url": "/std_info"
+         },
+         {
+            "title": "학생 상담",
+            "url": "/consulting"
+         }
+      ]
+   }
+]
